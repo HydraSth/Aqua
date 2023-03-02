@@ -1,0 +1,238 @@
+/* ---------- Global ----------- */
+:root {
+    --main-color: #0d6d5b;
+    --secc-color: #33B190;
+    --hover-color:#b5c1bd;
+    --aux-color:#148a90;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-aqua{
+    border: 2px solid #fff;
+    background: linear-gradient(140deg, rgba(61,162,167,1) 0%, rgba(54,180,156,1) 100%);
+    color: #fff;
+    transition: all .4s;
+}
+
+.btn-aqua{
+    border: 2px solid #fff;
+    background: linear-gradient(140deg, rgba(54,180,156,1) 0%, rgba(61,162,167,1) 100%);
+    color: #fff;
+    transition: all .4s;
+}
+
+
+.btn-aqua:focus{
+    background-color: var(--aux-color);
+    box-shadow:1px 1px 4px #fff; 
+}
+
+.btn-aqua2{
+    background: rgb(83,173,177);
+    background: linear-gradient(140deg, rgba(83,173,177,1) 0%, rgba(54,180,156,1) 100%);
+    color: #fff;
+    transition: all .4s;
+}
+
+.btn-aqua2:hover{
+    background: linear-gradient(140deg,rgba(54,180,156,1) 0%,  rgba(83,173,177,1) 100%);
+    color: #fff;
+    transform: scale(1.1);
+    transition: all .4s;
+}
+
+.Verde{
+    color: var(--aux-color);
+}
+
+.VerdeOscuro{
+    color: var(--main-color);
+}
+
+.Gris{
+    color:#b5c1bd;
+}
+
+.GrisOscuro{
+    color:#5a5a5a;
+}
+
+.w-10{
+    width: 10%;
+}
+
+.w-5{
+    width: 5%;
+}
+
+body{
+    background-color: #eef3f3;
+}
+
+
+/* -------- Correciones Bootstrap-------- */
+    .row{
+        --bs-gutter-x: 0rem;
+    } 
+
+    .accordion-button:not(.collapsed) {
+        color: var(--aux-color);
+        background-color: #f8f9fa;
+        box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 #dee6e3;
+        text-shadow: 1px 1px 7px #ffffff;
+    }
+
+    .accordion {
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    }
+
+    .carousel-indicators [data-bs-target] {
+        background-color: #636262;
+    }    
+
+/*----------- Navbar -------------*/
+
+
+
+.TamañoImg{
+    width: 75px;
+    aspect-ratio: 3/2;
+}
+
+.bg-dropdown{
+    box-shadow: 0px 5px 8px 0px #7c7c7c87;
+    background-color: #f8f9fa;
+}
+
+/* ----------- Inicio ------------- */
+
+.vw-10{
+    width: 10vw;
+}
+
+.bg-main{
+    background-color: var(--main-color);
+}
+
+header svg{
+    fill: #fff;
+    max-width: 5vw;
+}
+
+#Inicio{
+    background: #19a0a3;
+    background-image: url(../img/bg-main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+
+h1,h2,h3{
+    color: #fff;
+}
+
+/* ----- Proveedores ------ */
+
+.FotosProveedores{
+    width: 150px;
+    filter:opacity(80%);
+    filter: grayscale(1);
+}
+
+.FotosProveedores:hover{
+    filter: grayscale(0);
+    transition: 0.5s;
+}
+
+/* ------------ Acordion --------------- */
+
+.accordion-button:focus {
+    border: none;
+    box-shadow: none;
+
+    animation: glow 1s ease-in-out 1 alternate;
+    transition: all .5s;
+
+    color: var(--aux-color);
+    background-color: #f8f9fa;;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 #dee6e3;
+    text-shadow: 1px 1px 7px #ffffff;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px 5px rgba(10, 167, 133, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 10px 5px rgba(16, 228, 182, 0.5);
+  }
+}
+
+/*------------ Sobre nuestra empresa ---------*/
+
+.Titulo{
+    color: var(--aux-color);
+}
+
+.Titulo::before {
+    content: "";
+    position: relative;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #9b9b9b;
+    top: 24px;
+    left: calc(50% - 60px);
+
+}
+
+#Dias::before{
+    height: 100%;
+    background-color: #ccc;
+    width: 1px;
+}
+
+.Titulo::after {
+    content: "";
+    position: relative;
+    display: block;
+    border-radius: 0px 0px 20px 20px;
+    width: 90px;
+    height: 4px;
+    background: #b9d1cc;
+    bottom: 0;
+    left: calc(50% - 45px);
+}
+
+.Mapa{
+    width: 100%;
+    border: none;
+
+}
+
+.wdivisor{
+    display: inline-block;
+    background-color: #c5c5c5;
+    height: 1px;
+}
+
+/* Fotos productos */
+
+.Tarjetas{
+    height:255px;
+    width:100%;
+}
+
+.PushBottom{
+    position: relative;
+    top: 50px;
+}
+/* -------- Footer ---------- */
+.v5{
+    width: 2vw;
+}
