@@ -13,7 +13,7 @@
 <p>Una Landing Page con el objetivo de convertir los visitantes en Leads, diseño sencillo, atractivo y optimizado para potenciar el alcance de la misma. Con información sobre productos y vías de comunicación para realizar la conversión a cliente. El sitio web contiene CTA, ubicación de la tienda, valores de Aqua, imágenes e información sobre productos.
 </p>
 <h2 id="Estado">🚧 Estado del proyecto 🚧</h2>
-<h3>🔳 En progreso 60%</h3>
+<h3>🔳 En progreso 90%</h3>
 <ul>
   <li>Gestión de dominio☑️</li>
   <li>Planificación☑️</li>
@@ -22,14 +22,12 @@
     <ul>
       <div>WhatsApp☑️</div>
       <div>Instagram </div>
-      <div>Google maps</div>
+      <div>Google maps☑️</div>
     </ul>
   <li>Módulo de WhatsApp</li>
-  <li>Secciones</li>
-  <li>Información</li>
+  <li>Secciones☑️</li>
+  <li>Información☑️</li>
 </ul>
-<p>El desarrollo de la página es <b>avanzado</b>, pero aún faltan detalles como la informacion real, para <b>remplazarla por los lorem ipsum</b>; por otro lado, la incorporacion de<b> fotos y detalles</b> de cada producto; el modulo de WhatsApp todavia esta pendiente a ser colocado y esta <b>planeado implementarlo sobre el final</b> de desarrollo.
-</p>
 
 <h2 id="Caracteristicas">🚰 Características</h2>
 
