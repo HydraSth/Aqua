@@ -60,4 +60,4 @@
 <table>
 
 <h2 id="Demo">🖱️ Demo en vivo</h2>
-<p>Hace <a href="https://hydrasth.github.io/AquaLanding/">click aca</a> para observar una demostracion de la pagina actualmente. </p>
+<p>Hace <a href="https://hydrasth.github.io/Aqua/">click aca</a> para observar una demostracion de la pagina actualmente. </p>
