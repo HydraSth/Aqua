@@ -20,7 +20,7 @@ cards.events.forEach(element => {
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                             <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#${element.id}">Detalles</button>
-                            <button type="button" class="btn btn-sm btn-outline-success" onclick="location.href='https://api.whatsapp.com/send?phone=5492954522620&text=Hola,%20me%20gustaría%20obtener%20mayor%20información%20sobre%20${element.nombre}'">Mensaje</button>
+                            <button type="button" class="btn btn-sm btn-outline-success" onclick="location.href='https://api.whatsapp.com/send?phone=5492954522620&text=Hola,%20me%20gustaría%20obtener%20mayor%20información%20sobre%20${element.nombre}'">Enviar mensaje</button>
                         </div>
                     </div>
                 </div> 
