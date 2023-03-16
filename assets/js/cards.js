@@ -52,6 +52,45 @@ var cards = {
         "precio":10,
         "nuevo":false
     },
-
+    {
+        id: 6,
+        "imagen":"https://http2.mlstatic.com/D_NQ_NP_2X_698823-MLA43204831027_082020-F.webp",
+        "nombre":"AquaUv",
+        "descripcionBreve":"Elimina bacterias y algas microscópicas sin recurrir a productos químicos.",
+        "descripcion":"Filtro Esterilizador ultravioleta germicida de fabricación argentina, construido con materiales de alta calidad que le otorgan resistencia y duración por muchos años. Exterior de PVC e interior de acero inoxidable espejado.",
+        "categoria":"Esterilizador",
+        "precio":10,
+        "nuevo":false
+    },
+    {
+        id: 7,
+        "imagen":"https://cdn.hidrolit.com.ar/wp-content/uploads/2018/02/Sin-titulo-9_Mesa-de-trabajo-1-800x800.png",
+        "nombre":"Repuesto Senic Out",
+        "descripcionBreve":"Núcleo de repuesto SENIC OUT orignal.",
+        "descripcion":"Elimina Arsénico y Metales Pesados, además de Cloro, Sabores y olores desagradables del agua de red.",
+        "categoria":"Repuestos",
+        "precio":10,
+        "nuevo":true
+    },
+    {
+        id: 8,
+        "imagen":"https://http2.mlstatic.com/D_NQ_NP_2X_827842-MLA50434367525_062022-F.webp",
+        "nombre":"Kit conexión purificador agua con rosca universal",
+        "descripcionBreve":"Una solución conveniente y efectiva para la instalacion de equipos Purificadores de agua.",
+        "descripcion":"Es fácil de instalar gracias a su diseño sin rosca, siendo compatible con la mayoría de los grifos de cocina.",
+        "categoria":"Repuestos Purificador",
+        "precio":10,
+        "nuevo":false
+    },
+    {
+        id: 9,
+        "imagen":"https://http2.mlstatic.com/D_NQ_NP_2X_828071-MLA45807297328_052021-F.webp",
+        "nombre":"Industrial BigAqua",
+        "descripcionBreve":"Sistema industrial de purificación con capacidad de procesamiento de 1600 litros por día. ",
+        "descripcion":" El sistema es capaz de remover una amplia variedad de contaminantes, incluyendo arsénico, nitratos, nitritos, sodio, plomo, mercurio, cromo, cadmio, zinc, calcio, magnesio, fluoruros, cloro, aluminio y otros metales pesados.",
+        "categoria":"Ósmosis Inversa Industrial",
+        "precio":10,
+        "nuevo":false
+    }
     ]
 };

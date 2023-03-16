@@ -77,31 +77,29 @@ elementos.forEach(elemento => {
 }
 
 filtros.forEach(filtro => {
-  filtro.addEventListener('change', filtrar);
+    filtro.addEventListener('change', filtrar);
 });
 
 
-//Mostrar elementos en el hover
-var dropdownPurificadores = document.getElementById("dropdown-productos");
-var dropdownMenu = dropdownPurificadores.querySelector(".dropdown-menu");
-
-dropdownPurificadores.addEventListener("mouseenter", function () {
+function showDropdownMenu() {
+  const dropdownMenu = this.querySelector(".dropdown-menu");
   dropdownMenu.classList.add("show");
-  dropdownMenu.setAttribute("data-bs-popper","static");
-});
-
-dropdownPurificadores.addEventListener("mouseleave", function () {
-    dropdownMenu.classList.remove("show");
-    dropdownMenu.removeAttribute("data-bs-popper");
-});
-
-let i = 1;
-
-for(let key in cards.events[i]){
-    console.log(`${key}: ${cards.events[i][key]}`);
+  dropdownMenu.setAttribute("data-bs-popper", "static");
 }
 
-//cards } from './cards.js';
+function hideDropdownMenu() {
+  const dropdownMenu = this.querySelector(".dropdown-menu");
+  dropdownMenu.classList.remove("show");
+  dropdownMenu.removeAttribute("data-bs-popper");
+}
 
-//cards.events.forEach(element => {
-    //Fechas totales
+const dropdownPurificadores = document.querySelectorAll(".dropdown-productos");
+
+dropdownPurificadores.forEach(function(dropdown) {
+  // Agregar evento mouseenter
+  dropdown.addEventListener("mouseenter", showDropdownMenu);
+  
+  // Agregar evento mouseleave
+  dropdown.addEventListener("mouseleave", hideDropdownMenu);
+});
+
