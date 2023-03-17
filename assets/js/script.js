@@ -80,7 +80,6 @@ filtros.forEach(filtro => {
     filtro.addEventListener('change', filtrar);
 });
 
-
 function showDropdownMenu() {
   const dropdownMenu = this.querySelector(".dropdown-menu");
   dropdownMenu.classList.add("show");
@@ -103,8 +102,6 @@ dropdownPurificadores.forEach(function(dropdown) {
   dropdown.addEventListener("mouseleave", hideDropdownMenu);
 });
 
-//Nav a
-// let productosHogar = Array.from(document.getElementsByClassName('productos-hogar')).map(producto=>producto.textContent)
 let productosHogar = Array.from(document.getElementsByClassName('productos-hogar'))
 let productosIndustria = Array.from(document.getElementsByClassName('productos-industria'))
 
@@ -118,7 +115,11 @@ productosHogar.forEach((botonNav)=>{
             let nombreFiltro= filtro.getAttribute("data-valor")
             return nombreFiltro==nombreBoton
         })
-        if(!filtroSeleccionado[0].checked){filtroSeleccionado[0].checked=true}
+        if(filtroSeleccionado.length!=0){
+            if(!filtroSeleccionado[0].checked==true){
+                filtroSeleccionado[0].checked=true
+            }
+        }
         filtrar()
     });
 })
@@ -134,9 +135,11 @@ productosIndustria.forEach((botonNav)=>{
             let nombreFiltro= filtro.getAttribute("data-valor")
             return nombreFiltro==nombreBoton
         })
-        if(!filtroSeleccionado[0].checked){
+        if(filtroSeleccionado.length!=0){
+            if(!filtroSeleccionado[0].checked==true){
             filtroIndustrial.checked=true;
             filtroSeleccionado[0].checked=true
+            }
         }
         filtrar()
     });

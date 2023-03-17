@@ -244,3 +244,8 @@ footer .clientes img{
     filter: grayscale(1) opacity(0.3);
     height: 30px;
 }
+
+/* ---------- Tarjeta error----------- */
+.tarjetaError{
+    display: none;
+}

@@ -78,7 +78,7 @@ var cards = {
         "nombre":"Kit conexión purificador agua con rosca universal",
         "descripcionBreve":"Una solución conveniente y efectiva para la instalacion de equipos Purificadores de agua.",
         "descripcion":"Es fácil de instalar gracias a su diseño sin rosca, siendo compatible con la mayoría de los grifos de cocina.",
-        "categoria":"Repuestos Purificador",
+        "categoria":"Repuesto Purificador",
         "precio":10,
         "nuevo":false
     },

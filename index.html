@@ -71,7 +71,7 @@
                                     <button class="nav-link productos-hogar" data-valor="Esterilizador">Esterilizadores</button>
                                 </li>
                                 <li class="nav-item">
-                                    <button class="nav-link productos-hogar text-start" data-valor="Respuesto">Repuestos / Accesorios</button>
+                                    <button class="nav-link productos-hogar text-start" data-valor="Repuesto">Repuestos / Accesorios</button>
                                 </li>
                                 <li class="nav-item">
                                     <button class="nav-link productos-hogar"><i>Otros</i></button>
@@ -94,7 +94,7 @@
                                     <button class="nav-link productos-industria" data-valor="Esterilizador">Esterilizadores</button>
                                 </li>
                                 <li class="nav-item">
-                                    <button class="nav-link productos-industria text-start" data-valor="Respuesto">Repuestos / Accesorios</button>
+                                    <button class="nav-link productos-industria text-start" data-valor="Repuesto">Repuestos / Accesorios</button>
                                 </li>
                                 <li class="nav-item">
                                     <button class="nav-link productos-industria"><i>Otros</i></button>
@@ -317,12 +317,12 @@
                                 <label class="pe-3" for="Inversa">Ósmosis Inversa</label>
                             </li>
                             <li>
-                                <input class="me-2 filtro" type="checkbox" data-valor="Esterilizadores" id="Esterilizadores">
-                                <label class="pe-3" for="Esterilizadores">Esterilizadores</label>
+                                <input class="me-2 filtro" type="checkbox" data-valor="Esterilizador" id="Esterilizador">
+                                <label class="pe-3" for="Esterilizador">Esterilizadores</label>
                             </li>
                             <li>
-                                <input class="me-2 filtro" type="checkbox" data-valor="Repuestos" id="Repuestos">
-                                <label class="pe-3" for="Repuestos">Respuestos / Accesorios</label>
+                                <input class="me-2 filtro" type="checkbox" data-valor="Repuesto" id="Repuesto">
+                                <label class="pe-3" for="Repuesto">Respuestos / Accesorios</label>
                             </li>
                             <li>
                                 <input class="me-2 filtro" type="checkbox" data-valor="Industrial" id="Industrial">
@@ -333,7 +333,14 @@
             </div>
 
             <div id="Tarjetas-Home" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                
+                <div class="m-auto tarjetaError" id="error">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h6 class="mb-0"><b>Ups!<br>No fue encontrado ningun elemento con ese filtro</b></h6>
+                            <p class="card-text">Desmarque los filtros y pruebe nuevamente, gracias.</p>
+                        </div> 
+                    </div>
+                </div>
             </div>
         </div>
     </section>
