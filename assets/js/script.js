@@ -103,3 +103,41 @@ dropdownPurificadores.forEach(function(dropdown) {
   dropdown.addEventListener("mouseleave", hideDropdownMenu);
 });
 
+//Nav a
+// let productosHogar = Array.from(document.getElementsByClassName('productos-hogar')).map(producto=>producto.textContent)
+let productosHogar = Array.from(document.getElementsByClassName('productos-hogar'))
+let productosIndustria = Array.from(document.getElementsByClassName('productos-industria'))
+
+productosHogar.forEach((botonNav)=>{
+    let checkboxs= Array.from(filtros);
+    botonNav.addEventListener("click", function() {
+        window.location.href=("#Productos")
+        let nombreBoton= botonNav.getAttribute("data-valor")
+        let filtroSeleccionado= checkboxs.filter(filtro=>{
+            filtro.checked=false
+            let nombreFiltro= filtro.getAttribute("data-valor")
+            return nombreFiltro==nombreBoton
+        })
+        if(!filtroSeleccionado[0].checked){filtroSeleccionado[0].checked=true}
+        filtrar()
+    });
+})
+
+let filtroIndustrial=document.getElementById('Industrial');
+productosIndustria.forEach((botonNav)=>{
+    let checkboxs= Array.from(filtros);
+    botonNav.addEventListener("click", function() {
+        window.location.href=("#Productos")
+        let nombreBoton= botonNav.getAttribute("data-valor")
+        let filtroSeleccionado= checkboxs.filter(filtro=>{
+            filtro.checked=false
+            let nombreFiltro= filtro.getAttribute("data-valor")
+            return nombreFiltro==nombreBoton
+        })
+        if(!filtroSeleccionado[0].checked){
+            filtroIndustrial.checked=true;
+            filtroSeleccionado[0].checked=true
+        }
+        filtrar()
+    });
+})

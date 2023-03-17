@@ -97,7 +97,10 @@ body{
 
 /*----------- Navbar -------------*/
 
-
+nav button{
+    background-color: #fff;
+    border: none;
+}
 
 .TamañoImg{
     width: 75px;
