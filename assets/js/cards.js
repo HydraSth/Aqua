@@ -8,7 +8,7 @@ var cards = {
         "nombre":"Senic Out",
         "descripcionBreve":"Elegante equipo diseñado para eliminar todos los contaminantes nocivos presente en tu agua.",
         "descripcion":"En su version sobre mesada el Senic Out, se conecta de manera simple, en pocos minutos y en 5 minutos esta listo para ofrecerte todo su potencial.",
-        "categoria":"Purificador Sobre Mesada",
+        "categoria":"Purificador",
         "precio":5,
         "nuevo":true
     },
