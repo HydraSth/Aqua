@@ -68,22 +68,12 @@ var cards = {
         "nombre":"Repuesto Senic Out",
         "descripcionBreve":"Núcleo de repuesto SENIC OUT orignal.",
         "descripcion":"Elimina Arsénico y Metales Pesados, además de Cloro, Sabores y olores desagradables del agua de red.",
-        "categoria":"Repuestos",
+        "categoria":"Repuesto Purificador",
         "precio":10,
         "nuevo":true
     },
     {
         id: 8,
-        "imagen":"https://http2.mlstatic.com/D_NQ_NP_2X_827842-MLA50434367525_062022-F.webp",
-        "nombre":"Kit conexión purificador agua con rosca universal",
-        "descripcionBreve":"Una solución conveniente y efectiva para la instalacion de equipos Purificadores de agua.",
-        "descripcion":"Es fácil de instalar gracias a su diseño sin rosca, siendo compatible con la mayoría de los grifos de cocina.",
-        "categoria":"Repuesto Purificador",
-        "precio":10,
-        "nuevo":false
-    },
-    {
-        id: 9,
         "imagen":"https://http2.mlstatic.com/D_NQ_NP_2X_828071-MLA45807297328_052021-F.webp",
         "nombre":"Industrial BigAqua",
         "descripcionBreve":"Sistema industrial de purificación con capacidad de procesamiento de 1600 litros por día. ",

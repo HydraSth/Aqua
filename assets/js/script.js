@@ -68,21 +68,36 @@ function filtrar() {
     let filtro1=filtrarCheckBox(cards.events)
     imprimirDOM(filtro1)
 }
-function filtrarCheckBox(arrayTarjetas){
-    let filtrosActivos=filtros.filter(filtro=>filtro.checked==true).map((filtro)=>{return filtro.id});
-    return arrayTarjetas.filter((tarjeta)=>{
-        return filtrosActivos.some((filtro)=>{
-            return tarjeta.categoria.includes(filtro)
-        })
-    })
-    
-}
+
 filtros.forEach(filtro => {
     filtro.addEventListener('change', filtrar);
 });
+function filtrarCheckBox(arrayTarjetas){
+    let filtrosActivos=filtros.filter(filtro=>filtro.checked==true).map((filtro)=>{return filtro.id});
+    let arregloTarjetas=[]
+    arrayTarjetas.forEach((tarjeta)=>{
+        if(filtrosActivos.every(filtro => tarjeta.categoria.includes(filtro))){
+            arregloTarjetas.push(tarjeta)
+        }
+    })
+    return arregloTarjetas;
+}
+
+
+
 function imprimirDOM(arrayTarjetasValidas){
     if(arrayTarjetasValidas.length==0){
-        crearTarjetas(cards.events)
+        let Tarjetas= document.getElementById('Tarjetas-Home');
+        Tarjetas.innerHTML=''
+        Tarjetas.insertAdjacentHTML("beforeend", `
+            <div class="m-auto">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h6 class="mb-0"><b>Ups!<br>No fue encontrado ningun elemento con ese filtro</b></h6>
+                    <p class="card-text">Desmarque los filtros y pruebe nuevamente, gracias.</p>
+                </div> 
+            </div>
+        </div>`)
     }else{
         crearTarjetas(arrayTarjetasValidas)
     }
@@ -119,12 +134,12 @@ productosIndustria.forEach((botonNav)=>{
         let filtroSeleccionado= checkboxs.filter(filtro=>{
             filtro.checked=false
             let nombreFiltro= filtro.getAttribute("data-valor")
-            return nombreFiltro==nombreBoton
+            return(nombreFiltro==nombreBoton)
         })
         if(filtroSeleccionado.length!=0){
             if(!filtroSeleccionado[0].checked==true){
-            filtroIndustrial.checked=true;
-            filtroSeleccionado[0].checked=true
+                filtroIndustrial.checked=true;
+                filtroSeleccionado[0].checked=true
             }
         }
         filtrar()
