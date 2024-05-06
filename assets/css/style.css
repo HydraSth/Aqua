@@ -10,7 +10,27 @@
 
 *{
     font-family: 'Poppins', sans-serif;
+    user-select: none;
 }
+
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-thumb:active{
+    background-color: #2f7e7e;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff00;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #d4d6d6;
+  border-radius: 10px;
+}
+
+  
 
 .btn-aqua{
     border: 2px solid #fff;
@@ -226,9 +246,33 @@ h1,h2,h3{
 
 /* Fotos productos */
 
-.Tarjetas{
+.ImgTarjetas{
     height:255px;
     width:100%;
+}
+
+.ContenidoTarjetas{
+    height: 100%;
+}
+
+.TituloTarjetasProductos{
+    line-height: normal;
+}
+
+.CategoriaTarjetasProductos{
+    max-height: 40px;
+    line-height: normal;
+}
+
+.TextoTarjetasProductos{
+    height: 70px;
+    overflow-y: scroll;
+}
+
+.CuerpoTarjetasProductos{
+    display: flex;
+    flex-direction: column;
+    place-content: space-around;
 }
 
 .PushBottom{
@@ -246,6 +290,3 @@ footer .clientes img{
 }
 
 /* ---------- Tarjeta error----------- */
-.tarjetaError{
-    display: none;
-}

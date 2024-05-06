@@ -1,7 +1,7 @@
 export { cards };
 
 var cards = {
-    "events": [
+    "articulos": [
       {
         id: 1,
         "imagen":"./assets/img/hero-img.png",

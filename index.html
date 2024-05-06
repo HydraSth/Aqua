@@ -32,7 +32,7 @@
 
 <body>
     
-    <header>
+    <header class="position-sticky top-0 w-100 z-3 shadow">
         <nav class="navbar navbar-expand-md ps-5 pe-5 bg-light">
                 <div class="container-fluid">
                 <img src="./assets/img/logo.svg" data-aos="fade-down" class="TamañoImg" alt="Logo">
@@ -144,6 +144,56 @@
             </div>
         </div>
     </section>
+      <!-- Productos -->
+      <section id="Productos" >
+        <div class="py-5 ">
+            <div class="container">
+                <div class="d-sm-flex w-80 justify-content-sm-between">
+                    <form>
+                        <ul class="row row-cols-auto">
+                            <li class="col">
+                                <input class="me-2 filtro" type="checkbox" data-valor="Purificador" id="Purificador">
+                                <label class="pe-3" for="Purificador">Purificador</label>                       
+                            </li>
+                            <li class="col">
+                                <input class="me-2 filtro" type="checkbox" data-valor="Sobre" id="Sobre">
+                                <label class="pe-3" for="Sobre">Sobre Mesada</label>
+                            </li>
+                            <li class="col">
+                                <input class="me-2 filtro" type="checkbox" data-valor="Bajo" id="Bajo">
+                                <label class="pe-3" for="Bajo">Bajo Mesada</label>
+                            </li>
+                            <li class="col">
+                                <input class="me-2 filtro" type="checkbox" data-valor="Ablandador" id="Ablandador">
+                                <label class="pe-3" for="Ablandador">Ablandador</label>
+                            </li>
+                            <li>
+                                <input class="me-2 filtro" type="checkbox" data-valor="Jarra" id="Jarra">
+                                <label class="pe-3" for="Jarra">Jarra</label>
+                            </li class="col">
+                            <li>
+                                <input class="me-2 filtro" type="checkbox" data-valor="Inversa" id="Inversa">
+                                <label class="pe-3" for="Inversa">Ósmosis Inversa</label>
+                            </li>
+                            <li>
+                                <input class="me-2 filtro" type="checkbox" data-valor="Esterilizador" id="Esterilizador">
+                                <label class="pe-3" for="Esterilizador">Esterilizadores</label>
+                            </li>
+                            <li>
+                                <input class="me-2 filtro" type="checkbox" data-valor="Repuesto" id="Repuesto">
+                                <label class="pe-3" for="Repuesto">Respuestos / Accesorios</label>
+                            </li>
+                            <li>
+                                <input class="me-2 filtro" type="checkbox" data-valor="Industrial" id="Industrial">
+                                <label class="pe-3" for="Industrial">Industrial</label>
+                            </li>
+                    </ul>
+                </form>
+            </div>
+            <div id="Tarjetas-Home" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            </div>
+        </div>
+    </section>
     <!-- Valores -->
     <section id="SobreNosotros" data-aos="fade-right">
     <div class="py-5 bg-light">
@@ -242,11 +292,11 @@
         <div id="CorrecionGaleria" class="container">
             <div class="row">
                 <div class="col-lg-6 d-flex align-items-center">
-                    <div id="GaleriaFotos" class="carousel slide rounded" data-bs-ride="carousel">
+                    <div id="GaleriaFotos" class="carousel slide rounded w-100" data-bs-ride="carousel">
                         <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#GaleriaFotos" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
-                        <button type="button" data-bs-target="#GaleriaFotos" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-                        <button type="button" data-bs-target="#GaleriaFotos" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+                            <button type="button" data-bs-target="#GaleriaFotos" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+                            <button type="button" data-bs-target="#GaleriaFotos" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                            <button type="button" data-bs-target="#GaleriaFotos" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
                         </div>
                         <div class="carousel-inner" >
                         <div class="carousel-item active">
@@ -269,7 +319,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-lg-6 ps-4 m-auto content">
+                <div class="col-lg-5 m-auto content">
                     <h3 class="Verde fw-bold">Te esperamos en Aqua.</h3>
                     <p class="fst-italic mb-0">
                         Nuestra tienda se encuentra disponible para ofrecerte atencion personalizada con nuestros asesores, alli podras conocer nuestra amplia variedad de modelos.
@@ -281,65 +331,6 @@
                         <p class="Gris text-center mb-0 fs-6">S 09:00-13:00</p>
                     </div>
                 </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Productos -->
-    <section id="Productos" >
-        <div class="py-5 ">
-            <div class="container">
-                <div class="d-sm-flex w-80 justify-content-sm-between">
-                    <form>
-                        <ul class="row row-cols-auto">
-                            <li class="col">
-                                <input class="me-2 filtro" type="checkbox" data-valor="Purificador" id="Purificador">
-                                <label class="pe-3" for="Purificador">Purificador</label>                       
-                            </li>
-                            <li class="col">
-                                <input class="me-2 filtro" type="checkbox" data-valor="Sobre" id="Sobre">
-                                <label class="pe-3" for="Sobre">Sobre Mesada</label>
-                            </li>
-                            <li class="col">
-                                <input class="me-2 filtro" type="checkbox" data-valor="Bajo" id="Bajo">
-                                <label class="pe-3" for="Bajo">Bajo Mesada</label>
-                            </li>
-                            <li class="col">
-                                <input class="me-2 filtro" type="checkbox" data-valor="Ablandador" id="Ablandador">
-                                <label class="pe-3" for="Ablandador">Ablandador</label>
-                            </li>
-                            <li>
-                                <input class="me-2 filtro" type="checkbox" data-valor="Jarra" id="Jarra">
-                                <label class="pe-3" for="Jarra">Jarra</label>
-                            </li class="col">
-                            <li>
-                                <input class="me-2 filtro" type="checkbox" data-valor="Inversa" id="Inversa">
-                                <label class="pe-3" for="Inversa">Ósmosis Inversa</label>
-                            </li>
-                            <li>
-                                <input class="me-2 filtro" type="checkbox" data-valor="Esterilizador" id="Esterilizador">
-                                <label class="pe-3" for="Esterilizador">Esterilizadores</label>
-                            </li>
-                            <li>
-                                <input class="me-2 filtro" type="checkbox" data-valor="Repuesto" id="Repuesto">
-                                <label class="pe-3" for="Repuesto">Respuestos / Accesorios</label>
-                            </li>
-                            <li>
-                                <input class="me-2 filtro" type="checkbox" data-valor="Industrial" id="Industrial">
-                                <label class="pe-3" for="Industrial">Industrial</label>
-                            </li>
-                    </ul>
-                </form>
-            </div>
-
-            <div id="Tarjetas-Home" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                <div class="m-auto tarjetaError" id="error">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h6 class="mb-0"><b>Ups!<br>No fue encontrado ningun elemento con ese filtro</b></h6>
-                            <p class="card-text">Desmarque los filtros y pruebe nuevamente, gracias.</p>
-                        </div> 
-                    </div>
                 </div>
             </div>
         </div>
@@ -362,33 +353,10 @@
                     <p>Data Fiscal</p>
                 </div>
             </div>
-            <div class="col-md-2 col-12 d-flex flex-wrap flex-column align-items-center clientes">
-                <h6 class="fw-bold">NUESTROS CLIENTES</h6>
-                <div class="row justify-content-around">
-                    <div class="col-4">
-                        <img src="./assets/img/clients/client-1.png" alt="">
-                        <img src="./assets/img/clients/client-2.png" alt="">
-                        <img src="./assets/img/clients/client-3.png" alt="">
-                        <img src="./assets/img/clients/client-4.png" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img src="./assets/img/clients/client-5.png" alt="">
-                        <img src="./assets/img/clients/client-6.png" alt="">
-                        <img src="./assets/img/clients/client-7.png" alt="">
-                        <img src="./assets/img/clients/client-8.png" alt="">
-                    </div>
-                </div>
-            </div>
             <div class="col-md-3 col-12 d-flex flex-wrap flex-column align-items-center">
                 <h6><b>AYUDA</b></h6>
                 <div>
                     <p>Método de contacto</p>
-                </div>
-                <div>
-                    <p>Preguntas Frecuentes</p>
-                </div>
-                <div>
-                    <p>Consejos</p>
                 </div>
                 <div>
                     <p>Politicas de privacidad</p>
